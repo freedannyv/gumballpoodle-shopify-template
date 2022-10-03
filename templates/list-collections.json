@@ -1,0 +1,99 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "sort": "products_high",
+        "image_ratio": "adapt",
+        "color_scheme": "background-1",
+        "image_padding": false
+      }
+    },
+    "166076456603c01be3": {
+      "type": "rich-text",
+      "blocks": {
+        "1660764566e6a731dd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ARTIST COLLABS",
+            "heading_size": "h1"
+          }
+        },
+        "1660764566e6a731dd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A collection of socks made in collaboration with some BRILLLLLIANT artists from all over the place, all right here 😊<\/p>"
+          }
+        },
+        "1660764566e6a731dd-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1660764566e6a731dd-0",
+        "1660764566e6a731dd-1",
+        "1660764566e6a731dd-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1660764427687f5a89": {
+      "type": "collection-list",
+      "blocks": {
+        "166076442791996a27-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "divine"
+          }
+        },
+        "166076442791996a27-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "oliver-hibert"
+          }
+        },
+        "166076442791996a27-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "thomas-fernandez"
+          }
+        },
+        "e0f0ac90-5e3f-460b-a2a1-85a68f8aef10": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tom-of-finland"
+          }
+        }
+      },
+      "block_order": [
+        "166076442791996a27-0",
+        "166076442791996a27-1",
+        "166076442791996a27-2",
+        "e0f0ac90-5e3f-460b-a2a1-85a68f8aef10"
+      ],
+      "settings": {
+        "title": "",
+        "image_ratio": "adapt",
+        "color_scheme": "background-2",
+        "swipe_on_mobile": true,
+        "image_padding": true,
+        "show_view_all": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166076456603c01be3",
+    "1660764427687f5a89"
+  ]
+}

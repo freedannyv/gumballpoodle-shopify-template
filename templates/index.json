@@ -1,0 +1,549 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NEW STYLES",
+            "button_link_1": "shopify:\/\/collections\/new-products",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "border": "xborder-t-2",
+        "scallop_border_top": false,
+        "scallop_border_bottom": true,
+        "image": "shopify:\/\/shop_images\/desktop-full-copy-2-100_624b39ce-47ff-4262-82ca-b6cb1795759e.gif",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "site_link": "shopify:\/\/collections\/animal-lovers",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1661401041cd8a412b": {
+      "type": "scrolling-banner",
+      "disabled": true,
+      "settings": {
+        "text": "BEST GAY SOCKS ON THE BLOCK"
+      }
+    },
+    "featured_products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "OUR NEWEST STYLES",
+        "collection": "new-products",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "16607588025304ad07": {
+      "type": "slideshow",
+      "blocks": {
+        "1660758802f35cbbdf-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop-full-copy-100.gif",
+            "heading": "",
+            "heading_size": "medium",
+            "subheading": "",
+            "button_label": "CLICK",
+            "link": "shopify:\/\/collections\/knee-socks",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-2",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1660758802f35cbbdf-0"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "scallop_border_top": true,
+        "scallop_border_bottom": true,
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "1660758993f3d6b9e6": {
+      "type": "image-with-text",
+      "blocks": {
+        "56c5abf4-c54d-4714-919f-5c4250b17edf": {
+          "type": "caption",
+          "settings": {
+            "caption": "HEY YOU! WANNA TEAM UP?",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "166075899324c06463-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "BECOME AN AMBASSADOR!",
+            "heading_size": "h1",
+            "stroke": false
+          }
+        },
+        "166075899324c06463-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join the GP team as an ambassador and we’ll set you up with a unique discount code to share with your friends, fam, followers and former lovers and earn <strong>10% commission <\/strong>on all orders placed using your code. Spread the love 💕 ...make some cash 💵 …Come join the Gumball Poodle Party 🧦 🎉 !<\/p>",
+            "text_style": "body"
+          }
+        },
+        "166075899324c06463-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN HOW",
+            "button_link": "https:\/\/join.collabs.shopify.com\/community\/apply\/tLpoWnNrlFk"
+          }
+        }
+      },
+      "block_order": [
+        "56c5abf4-c54d-4714-919f-5c4250b17edf",
+        "166075899324c06463-0",
+        "166075899324c06463-1",
+        "166075899324c06463-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/widget.gif",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "1660760840b614851d": {
+      "type": "social-lookbook-section",
+      "settings": {
+        "background": "#33cc33",
+        "scallop_border_top": true,
+        "scallop_border_bottom": true,
+        "position": 0,
+        "title": "Our Social Lookbook",
+        "caption": "Get Featured",
+        "num_of_images": 5,
+        "icon": true,
+        "button_label": "Load more",
+        "link": "shopify:\/\/pages\/our-social-lookbook-gumballpoodle"
+      }
+    },
+    "16607588504ef03feb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "PRIDE COLLECTION",
+        "collection": "pride",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "166075888494baaec7": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "166075891041478f50": {
+      "type": "image-with-text",
+      "blocks": {
+        "2de9632f-49e7-4feb-a441-483eee9644e9": {
+          "type": "caption",
+          "settings": {
+            "caption": "FEATURED COLLECTION",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "1660758909ce8ec6e8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "FART STUFF!",
+            "heading_size": "h1",
+            "stroke": false
+          }
+        },
+        "1660758909ce8ec6e8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SBD's, squeakers, quackers, rumblers, long ones, short ones, surprise ones, suppressed ones... whatever you call them, we've got you covered.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1660758909ce8ec6e8-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/butt-stuff"
+          }
+        }
+      },
+      "block_order": [
+        "2de9632f-49e7-4feb-a441-483eee9644e9",
+        "1660758909ce8ec6e8-0",
+        "1660758909ce8ec6e8-1",
+        "1660758909ce8ec6e8-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gif.gif2_c434c563-e5f9-4da9-a74f-b570db7f2d87.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "16607589256ae7078c": {
+      "type": "slideshow",
+      "blocks": {
+        "166075892566c3d966-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/divine.gif",
+            "heading": "",
+            "heading_size": "medium",
+            "subheading": "",
+            "button_label": "CLICK",
+            "link": "shopify:\/\/collections\/divine",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "166075892566c3d966-0"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "scallop_border_top": false,
+        "scallop_border_bottom": false,
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "16607589592e5ec82a": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "BUTT STUFF",
+        "collection": "butt-stuff",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "1660758718b193aeb0": {
+      "type": "image-with-text",
+      "blocks": {
+        "2bb78034-0627-4377-b689-32c651619fa0": {
+          "type": "caption",
+          "settings": {
+            "caption": "ONE SIZE FITS ALL",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "1660758718267bc75d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "MADE IN THE USA",
+            "heading_size": "h1",
+            "stroke": false
+          }
+        },
+        "1660758718267bc75d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Quality you can see and feel!<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1660758718267bc75d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP BEST SELLERS",
+            "button_link": "shopify:\/\/collections\/popular"
+          }
+        }
+      },
+      "block_order": [
+        "2bb78034-0627-4377-b689-32c651619fa0",
+        "1660758718267bc75d-0",
+        "1660758718267bc75d-1",
+        "1660758718267bc75d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/infographic_2000x2000-web.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "16607590038db6fcfc": {
+      "type": "apps",
+      "blocks": {
+        "31c5e12d-f6bf-4555-83a4-1e31f6a5f2f2": {
+          "type": "shopify:\/\/apps\/wiser-upsell-recommendations\/blocks\/wiser_recent\/3f966edc-9a4a-465c-a4df-436d2a39160d",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "31c5e12d-f6bf-4555-83a4-1e31f6a5f2f2"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1660759019dae47df3": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "CAUTION: DIRTY SOCKS!",
+        "collection": "dirty-socks",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "16607590660047f222": {
+      "type": "multicolumn",
+      "blocks": {
+        "16607590664028530a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Live_With_Kell_logo_gray_bg_2bc8b526-b245-43a9-b0a2-5b0b5855210f.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16607590664028530a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stephen_Colbert_logo_gray_bg_bd38582d-5935-4556-90df-d18e92e3da8b.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16607590664028530a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/The_View_logo_white_bg.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "26aa5f65-69c6-480b-9905-5cf1365baf9e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wired_logo_white_bg.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "f934b3e7-d2af-4828-9f79-cf32b1e47ba8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Daily_Mail_logo_gray_bg_f3e725d7-55b2-47d0-b3da-6bf80a59a036.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "a5b8f81f-300b-4019-bc78-97d301a03503": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bloomberg_logo_gray_bg_b5d0740f-1fda-4df1-94f9-16ec881ecca6.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "f932b63a-777a-403d-9960-e64345af7d06": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Marie_Claire_logo_gray_bg_1aca6521-7148-460c-abf6-05db6a81bdd5.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "9fbd18df-df75-465d-889b-4a2766d00f4f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Page_Six_logo_gray_bg_e0a2ec0a-dbe6-47f3-a625-88dd9b56901b.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c2c9ae96-ebe1-44b7-a892-9c5ac7a77277": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rachel_Maddow_logo_gray_bg_41139456-7e0d-4998-b508-5215e89e56dc.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "eeda520a-1862-45ad-a102-a0f6caca776e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vogue_Italia_logo_gray_bg_650e6fc9-5ed7-4ef6-8048-3735fc0dd32a.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16607590664028530a-0",
+        "16607590664028530a-1",
+        "16607590664028530a-2",
+        "26aa5f65-69c6-480b-9905-5cf1365baf9e",
+        "f934b3e7-d2af-4828-9f79-cf32b1e47ba8",
+        "a5b8f81f-300b-4019-bc78-97d301a03503",
+        "f932b63a-777a-403d-9960-e64345af7d06",
+        "9fbd18df-df75-465d-889b-4a2766d00f4f",
+        "c2c9ae96-ebe1-44b7-a892-9c5ac7a77277",
+        "eeda520a-1862-45ad-a102-a0f6caca776e"
+      ],
+      "settings": {
+        "title": "AS SEEN ON",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "color_scheme": "background-2",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "16607591887a4795da": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "GREAT GIFT IDEAS",
+        "collection": "great-gifts",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "1661401041cd8a412b",
+    "featured_products",
+    "16607588025304ad07",
+    "1660758993f3d6b9e6",
+    "1660760840b614851d",
+    "16607588504ef03feb",
+    "166075888494baaec7",
+    "166075891041478f50",
+    "16607589256ae7078c",
+    "16607589592e5ec82a",
+    "1660758718b193aeb0",
+    "16607590038db6fcfc",
+    "1660759019dae47df3",
+    "16607590660047f222",
+    "16607591887a4795da"
+  ]
+}

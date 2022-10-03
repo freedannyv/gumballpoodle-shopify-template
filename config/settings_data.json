@@ -1,0 +1,191 @@
+{
+  "current": {
+    "colors_solid_button_labels": "#000000",
+    "colors_accent_1": "#fed430",
+    "colors_accent_2": "#ff00cc",
+    "colors_text": "#000000",
+    "colors_outline_button_labels": "#000000",
+    "colors_background_1": "#fdfdfd",
+    "colors_background_2": "#33ccff",
+    "type_header_font": "poppins_n7",
+    "type_body_font": "poppins_n4",
+    "sale_badge_color_scheme": "background-2",
+    "accent_icons": "accent-2",
+    "page_width": "1260",
+    "social_facebook_link": "https:\/\/www.facebook.com\/GumballPoodle\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/gumballpoodle\/",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@shopgumballpoodle",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_accent_color": "#ff00cc",
+    "checkout_button_color": "#ff00cc",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Free Shipping on Orders to USA over $50",
+              "color_scheme": "accent-2",
+              "link": ""
+            }
+          },
+          "677ba314-9626-40c3-897e-6f5bc24f1513": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0",
+          "677ba314-9626-40c3-897e-6f5bc24f1513"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/logo_94a9f367-0bb0-45bc-aa5d-9f12b71c34c1.png",
+          "logo_width": 180,
+          "logo_position": "middle-left",
+          "header_image_width": 80,
+          "menu": "new-menu-2020",
+          "show_line_separator": true,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "ad073c21-dc5e-48ec-9422-83b586f01b18": {
+            "type": "text",
+            "settings": {
+              "heading": "GET 10% OFF YOUR FIRST ORDER",
+              "subtext": "<p>Subscribe to our email list to stay in the loop on all our latest styles, plus get a 10% off coupon code today!<\/p>"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "#",
+              "menu": "footer-1"
+            }
+          },
+          "dc171b50-f4d6-4dd9-bfc5-76d8f6b762f6": {
+            "type": "link_list",
+            "settings": {
+              "heading": "#",
+              "menu": "footer-2"
+            }
+          },
+          "cf0bf0ce-6846-4a53-8023-b65005ce48d0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/logo_94a9f367-0bb0-45bc-aa5d-9f12b71c34c1.png",
+              "image_width": 100,
+              "alignment": ""
+            }
+          }
+        },
+        "block_order": [
+          "ad073c21-dc5e-48ec-9422-83b586f01b18",
+          "footer-0",
+          "dc171b50-f4d6-4dd9-bfc5-76d8f6b762f6",
+          "cf0bf0ce-6846-4a53-8023-b65005ce48d0"
+        ],
+        "settings": {
+          "color_scheme": "accent-1",
+          "newsletter_enable": false,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": true
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "10261849759452303822": {
+        "type": "shopify:\/\/apps\/change-commerce\/blocks\/app-embed-block\/7b6c2cd4-8962-4dc6-975b-870e1f567789",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#FFFFFF",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "type_header_font": "assistant_n4",
+      "type_body_font": "assistant_n4",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+          }
+        }
+      }
+    },
+    "Craft": {
+      "colors_solid_button_labels": "#EFECEC",
+      "colors_accent_1": "#2A332F",
+      "colors_accent_2": "#476154",
+      "colors_text": "#1C1A1A",
+      "colors_outline_button_labels": "#7B8382",
+      "colors_background_1": "#EFECEC",
+      "colors_background_2": "#C1BCAE",
+      "type_header_font": "americana_n4",
+      "type_body_font": "quattrocento_sans_n4",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "menu": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "menu",
+            "text"
+          ],
+          "settings": {
+            "color_scheme": "accent-1"
+          }
+        }
+      }
+    }
+  }
+}

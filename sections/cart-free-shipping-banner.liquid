@@ -1,0 +1,25 @@
+<div id="free-shipping-banner" data-id="{{ section.id }}" class="xbg-[#EB4869] xtext-lg sm:xtext-3xl xtext-center xpy-3 {% if cart.item_count > 0 %}xmy-[5rem] lg:xmy-[3rem]{% else %}xmy-4 lg:xmy-8{% endif %} xuppercase xfont-bold">
+  <div class="js-contents">
+    {% if cart.total_price > 5000 %}
+      <span class="xtext-white">You Qualify for free shipping!</span>
+    {% else %}
+      You are
+      <span class="xtext-white">
+        {{ 5000 | minus: cart.total_price | money }}
+      </span>
+      away from free shipping!
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Free Shipping Banner",
+    "tag": "section",
+    "presets": [
+      {
+        "name": "Free Shipping Banner"
+      }
+    ]
+  }
+{% endschema %}

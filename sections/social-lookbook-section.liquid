@@ -36,7 +36,7 @@
               {{- section.settings.button_label -}}
             </a>
           {% endif %}
-          <div class="xspace-x-2 xmt-4 xself-center xs:xplace-self-auto">
+          <div class="xspace-x-2 xmt-4 xself-center xs:xplace-self-auto {% if section.settings.button_label == blank %}xml-auto sm:xml-0{% endif %}">
             <div class="swiper-prev lookbook-button">
               {% render 'icon-caret-left' %}
             </div>

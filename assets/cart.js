@@ -62,6 +62,11 @@ class CartItems extends HTMLElement {
         section: document.getElementById("main-cart-footer").dataset.id,
         selector: ".js-contents",
       },
+      {
+        id: "free-shipping-banner",
+        section: document.getElementById("free-shipping-banner").dataset.id,
+        selector: ".js-contents",
+      },
     ];
   }
 
@@ -102,7 +107,6 @@ class CartItems extends HTMLElement {
         });
 
         this.updateLiveRegions(line, parsedState.item_count);
-        window.location.reload();
         const lineItem = document.getElementById(`CartItem-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`))
           lineItem.querySelector(`[name="${name}"]`).focus();

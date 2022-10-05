@@ -31,7 +31,6 @@
         "border": "xborder-t-2",
         "scallop_border_top": false,
         "scallop_border_bottom": true,
-        "image": "shopify:\/\/shop_images\/desktop-full-copy-2-100_624b39ce-47ff-4262-82ca-b6cb1795759e.gif",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -49,14 +48,15 @@
       "type": "scrolling-banner",
       "disabled": true,
       "settings": {
-        "text": "BEST GAY SOCKS ON THE BLOCK"
+        "text": "BEST GAY SOCKS ON THE BLOCK",
+        "link": ""
       }
     },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
         "title": "OUR NEWEST STYLES",
-        "collection": "new-products",
+        "collection": "all-products",
         "products_to_show": 4,
         "show_view_all": true,
         "swipe_on_mobile": true,
@@ -146,7 +146,6 @@
         "166075899324c06463-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/widget.gif",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -235,7 +234,6 @@
         "1660758909ce8ec6e8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/gif.gif2_c434c563-e5f9-4da9-a74f-b570db7f2d87.gif",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -252,7 +250,6 @@
         "166075892566c3d966-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/divine.gif",
             "heading": "",
             "heading_size": "medium",
             "subheading": "",
@@ -340,7 +337,6 @@
         "1660758718267bc75d-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/infographic_2000x2000-web.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -353,16 +349,6 @@
     },
     "16607590038db6fcfc": {
       "type": "apps",
-      "blocks": {
-        "31c5e12d-f6bf-4555-83a4-1e31f6a5f2f2": {
-          "type": "shopify:\/\/apps\/wiser-upsell-recommendations\/blocks\/wiser_recent\/3f966edc-9a4a-465c-a4df-436d2a39160d",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "31c5e12d-f6bf-4555-83a4-1e31f6a5f2f2"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -389,7 +375,6 @@
         "16607590664028530a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Live_With_Kell_logo_gray_bg_2bc8b526-b245-43a9-b0a2-5b0b5855210f.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -399,7 +384,6 @@
         "16607590664028530a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Stephen_Colbert_logo_gray_bg_bd38582d-5935-4556-90df-d18e92e3da8b.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -409,7 +393,6 @@
         "16607590664028530a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/The_View_logo_white_bg.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -419,7 +402,6 @@
         "26aa5f65-69c6-480b-9905-5cf1365baf9e": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wired_logo_white_bg.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -429,7 +411,6 @@
         "f934b3e7-d2af-4828-9f79-cf32b1e47ba8": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Daily_Mail_logo_gray_bg_f3e725d7-55b2-47d0-b3da-6bf80a59a036.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -439,7 +420,6 @@
         "a5b8f81f-300b-4019-bc78-97d301a03503": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Bloomberg_logo_gray_bg_b5d0740f-1fda-4df1-94f9-16ec881ecca6.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -449,7 +429,6 @@
         "f932b63a-777a-403d-9960-e64345af7d06": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Marie_Claire_logo_gray_bg_1aca6521-7148-460c-abf6-05db6a81bdd5.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -459,7 +438,6 @@
         "9fbd18df-df75-465d-889b-4a2766d00f4f": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Page_Six_logo_gray_bg_e0a2ec0a-dbe6-47f3-a625-88dd9b56901b.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -469,7 +447,6 @@
         "c2c9ae96-ebe1-44b7-a892-9c5ac7a77277": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rachel_Maddow_logo_gray_bg_41139456-7e0d-4998-b508-5215e89e56dc.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -479,7 +456,6 @@
         "eeda520a-1862-45ad-a102-a0f6caca776e": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Vogue_Italia_logo_gray_bg_650e6fc9-5ed7-4ef6-8048-3735fc0dd32a.png",
             "title": "",
             "text": "",
             "link_label": "",

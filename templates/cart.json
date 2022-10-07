@@ -1,10 +1,5 @@
 {
   "sections": {
-    "16648748368a77e38f": {
-      "type": "cart-free-shipping-banner",
-      "settings": {
-      }
-    },
     "1660766384e0ab106a": {
       "type": "custom-liquid",
       "disabled": true,

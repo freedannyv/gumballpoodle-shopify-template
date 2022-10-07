@@ -1,0 +1,24 @@
+{% if request.page_type == 'cart' %} 
+    <a 
+        id="cart-icon-bubble" 
+        class="header__icon header__icon--cart link focus-inset" 
+        href="{{ routes.cart_url }}">
+{% else %}
+    <a
+        id="cart-icon-bubble"
+        class="header__icon header__icon--cart link focus-inset" 
+        href="#cart-drawer" 
+        role="button" 
+        data-bs-toggle="offcanvas" 
+        aria-controls="cart-drawer">
+{% endif %}
+    {% render 'icon-cart-empty' %}
+    <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+    <div 
+        class="cart-count-bubble" 
+        style="{%- if cart == empty -%}display: none;{% endif %}">
+        <span class="visually-hidden">
+            {{ 'sections.header.cart_count' | t: count: cart.item_count }}
+        </span>
+    </div>
+</a>

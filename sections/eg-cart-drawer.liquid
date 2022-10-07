@@ -265,16 +265,6 @@ button:not(:disabled) {
     .progress-bar { transition: none; }
 }
   
-.progress-bar-striped {
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 1rem 1rem;
-}
-  
-.progress-bar-animated {
-    -webkit-animation: 1s linear infinite progress-bar-stripes;
-    animation: 1s linear infinite progress-bar-stripes;
-}
-
 @media (prefers-reduced-motion: reduce) {
     .progress-bar-animated {
         -webkit-animation: none;
@@ -777,14 +767,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
                     {% endif %}
                 </div>
                 <div class="offcanvas-footer border-top px-3 py-3">
-                    <p class="text-center mt-0 mb-0">
-                        <span class="text-muted">
-                            {{ 'sections.cart.subtotal' | t }}: 
-                        </span>
-                        <b id="cart-subtotal-value">
-                            {{ cart.total_price | money }}
-                        </b>
-                    </p>
+                    <div class="xflex xjustify-around">
+                            <p class="text-muted">
+                                {{ 'sections.cart.subtotal' | t }}: 
+                            </p>
+                            <p id="cart-subtotal-value">
+                                {{ cart.total_price | money }}
+                            </p>
+                    </div>
+
                     {% if section.settings.show_taxes_shipping_text %}
                         <p class="caption-large text-muted text-center mt-0 mb-3">
                             {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t }}
@@ -927,7 +918,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             "type": "richtext",
             "id": "cart_goal_description_after",
             "label": "Description - Goal completed",
-            "default": "<p>Congrats! You're eligible for <strong>FREE Shipping.</strong></p>"
+            "default": "<p><strong>Woo! You earned FREE Shipping.</strong></p>"
         },
         {
             "type": "color",

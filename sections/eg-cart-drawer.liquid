@@ -230,8 +230,8 @@ button:not(:disabled) {
 }
 
 .progress {
+    position: relative;
     display: flex;
-    height: 1rem;
     overflow: hidden;
     font-size: 0.75rem;
     background-color: #e9ecef;
@@ -248,6 +248,17 @@ button:not(:disabled) {
     white-space: nowrap;
     background-color: #0d6efd;
     transition: width 0.6s ease;
+}
+
+.progress-bar-goal-desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -555,22 +566,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
                             endif
                         %}
                         <div id="eg-cart-drawer-goal" class="mb-3">
-                            <div 
-                                class="rte text-center small mb-1" 
-                                style="{% if cart_goal_percentage == 100 %}color: {{ cart_goal_color }};{% endif %}">
-                                {{ cart_goal_desc }}
-                            </div>
-                            <div class="progress" style="height: 1.25rem;">
+                            <div class="progress">
                                 <div 
-                                    class="progress-bar progress-bar-striped progress-bar-animated" 
+                                    class="progress-bar xh-20 progress-bar-striped progress-bar-animated" 
                                     role="progressbar" 
                                     aria-valuenow="{{ cart.total_price | money }}" 
                                     aria-valuemin="0"
                                     aria-valuemax="{{ goal_value_with_cents | money }}"
                                     data-width="{{ cart_goal_percentage }}%"
                                     style="width: 0%; background-color: {{ cart_goal_color }};">
-                                    <span style="font-size: 1rem;">
-                                        {{ cart_goal_percentage }}%
+                                </div>
+                                <div class="progress-bar-goal-desc">
+                                    <span class="xw-full xtext-center uppercase">
+                                        {{ cart_goal_desc }}
                                     </span>
                                 </div>
                             </div>
@@ -900,14 +908,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
             "info": "Select 0 to disable this feature",
             "min": 0,
             "max": 500,
-            "default": 100,
+            "default": 50,
             "step": 5
         },
         {
             "type": "richtext",
             "id": "cart_goal_description_before",
             "label": "Description - Goal not completed",
-            "default": "<p><strong>[amount]</strong> away from FREE Shipping!</p>"
+            "default": "<p><strong>You are [amount]  away from FREE Shipping!</strong></p>"
         },
         {
             "type": "color",

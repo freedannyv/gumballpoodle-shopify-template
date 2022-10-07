@@ -54,7 +54,7 @@ function createImageCard(item) {
   if (item.type === "image") {
     new_gallery_item.innerHTML = `<img data-src="${item.thumbnail_url}" class="xw-full xh-full xobject-cover xobject-center">`;
   } else {
-    new_gallery_item.innerHTML = `<video data-src="${item.content_url}" class="xw-full xh-full xobject-cover xobject-center" autoplay muted loop playsinline></video>`;
+    new_gallery_item.innerHTML = `<video data-src="${item.content_url}" poster="${item.thumbnail_url}" class="xw-full xh-full xobject-cover xobject-center" autoplay muted loop playsinline></video>`;
   }
   return new_gallery_item;
 }

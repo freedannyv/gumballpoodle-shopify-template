@@ -118,22 +118,22 @@
                             </div>
                         </div>
                     {% endunless %}
-                    <ul class="product-list list-unstyled mt-n2 mb-0">
+                    <ul class="product-list list-unstyled mt-n2 xmb-0">
                         {% for line_item in cart.items %}
                             <li class="product-list-item">
-                                <div class="d-flex align-items-center mx-n3 py-3">
-                                    <a href="{{ line_item.url }}" class="d-block flex-shrink-0 me-3">
+                                <div class="d-flex mx-n3 py-3">
+                                    <a href="{{ line_item.url }}" class="d-block flex-shrink-0 me-3 xw-[90px] xh-[104px]">
                                         <img 
                                             class="cart-item__image img-fluid"
-                                            src="{{ line_item.image.src | img_url: product_img_size, crop: 'center' }}"
+                                            src="{{ line_item.image.src | image_url }}"
                                             alt="{{ line_item.image.alt | escape }}" 
-                                            width="{{ product_img_width }}"
-                                            height="{{ product_img_height }}"
+                                            width="90"
+                                            height="104"
                                             style="display: block"
                                             loading="lazy">
                                     </a>
                                     <div class="xw-full">
-                                        <a href="{{ line_item.url }}" class="cart-item__name h4 break mb-1">
+                                        <a href="{{ line_item.url }}" class="cart-item__name h4 break mb-1 !xfont-extrabold uppercase xtracking-tightest xtext-[16px]">
                                             {{ line_item.product.title }}
                                         </a>
                                         {%- if line_item.original_price != line_item.final_price -%}
@@ -152,8 +152,11 @@
                                                 </strong>
                                             </div>
                                         {%- else -%}
-                                            <div class="product-option mb-2">
-                                                {{ line_item.original_price | money }}
+                                            <div class="xflex xjustify-between xitems-end mb-3">
+                                                {%- comment -%} <div class="xtext-[16px] xleading-[24px] ">Bundle</div> {%- endcomment -%}
+                                                <div class="product-option">
+                                                    {{ line_item.original_price | money }}
+                                                </div>
                                             </div>
                                         {%- endif -%}
 
@@ -225,7 +228,9 @@
                                                 </a>
                                             </cart-remove-button> {%- endcomment -%}
                                             <div>
-                                                {{ line_item.quantity | times: line_item.final_price | money }}
+                                                <p class="xfont-semibold xtext-[16px]">
+                                                    {{ line_item.quantity | times: line_item.final_price | money }}
+                                                </p>
                                             </div>
                                         </div>       
                                     </div>
@@ -282,7 +287,7 @@
                         </ul>
                     {% endif %}
                     {% if section.settings.cart_note_enable %}
-                        <div id="eg-cart-drawer-note">
+                        <div id="eg-cart-drawer-note" class="xmy-5">
                             {% unless section.settings.cart_note_title == blank %}
                                 <h4 id="eg-cart-drawer-note-title" class="mb-3">
                                     {{ section.settings.cart_note_title }}
@@ -314,17 +319,17 @@
                     {% endif %}
                 </div>
                 <a href="{{ routes.all_products_collection_url }}" class="button-continue">
-                    <div class="xborder-t xborder-black xtext-center xfont-bold uppercase xm-2 xpy-4">
+                    <div class="xtext-center xfont-medium xm-2 xpy-4 xtext-[20px]">
                         <span class="xblock">{{ 'general.continue_shopping' | t }}</span>
                     </div>
                 </a>
                 <div class="xbg-[#FFF7EA] ">
-                    <div class="offcanvas-footer border-top px-3 py-3">
-                    <div class="xflex xjustify-around xmb-6">
-                            <p class="uppercase xtext-black xfont-bold xtracking-widest">
+                    <div class="offcanvas-footer xborder-t-2 xborder-black px-3 py-3">
+                    <div class="xflex xjustify-between xmb-6 xpx-3">
+                            <p class="uppercase xtext-black xfont-extrabold xtext-[20px]">
                                 {{ 'sections.cart.subtotal' | t }}: 
                             </p>
-                            <p id="cart-subtotal-value">
+                            <p id="cart-subtotal-value" class="xfont-bold xtext-[20px]">
                                 {{ cart.total_price | money }}
                             </p>
                     </div>
@@ -335,7 +340,7 @@
                         </p>
                     {% endif %}
                     <button 
-                        class="cart__checkout-button button button--full-width d-flex align-items-center justify-content-center uppercase" 
+                        class="cart__checkout-button button button--full-width d-flex align-items-center justify-content-center !xtext-[20px] xfont-medium" 
                         name="checkout" 
                         type="submit">
                         {{ 'sections.cart.checkout' | t }}

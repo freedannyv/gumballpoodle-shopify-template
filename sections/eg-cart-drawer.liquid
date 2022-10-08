@@ -120,7 +120,8 @@ button:not(:disabled) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
+    text-transform: uppercase;
 }
 
 .offcanvas-header .btn-close {
@@ -217,16 +218,20 @@ button:not(:disabled) {
     filter: invert(1) grayscale(100%) brightness(200%);
 }
 
-/*
-    Bootstrap Progress bar
-    https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.css
-*/
-@-webkit-keyframes progress-bar-stripes {
-    0% { background-position-x: 1rem; }
+.animate-it {
+    animation: animate-it 1s infinite;
+    animation-iteration-count: 1;
 }
-  
-@keyframes progress-bar-stripes {
-    0% { background-position-x: 1rem; }
+
+@keyframes animate-it {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform:translateY(0);
+    }
 }
 
 .progress {
@@ -323,6 +328,14 @@ ul#eg-cart-drawer-upsells-list button .path {
 
 }
 
+.button-continue div span {
+    transition: transform 0.3s;
+}
+
+.button-continue:hover div span {
+    transform: translateX(-15px);
+}
+
 /*
     Cart Note
 */
@@ -346,10 +359,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     initBootstrapScript()
 
+
     // Open the cart drawer by URL if contains '#cart'
     if (window.location.hash.includes('#cart')) {
         setTimeout(() => {
-            const offcanvas = bootstrap.Offcanvas.getOrCreateInstance('#cart-drawer')
+            const offcanvas = bootstrap.Offcanvas.getOrCreateInstance('#cart-drawer');
             offcanvas.show()
         }, 250)
     }
@@ -511,7 +525,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 <h3 id="cart-drawer-label" class="offcanvas-title m-0">
                     <div class="d-flex align-items-center">
                         {{ 'sections.cart.title' | t }} 
-                        ({{ cart.item_count }})
                     </div>
                 </h3>
                 <button 
@@ -735,7 +748,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         </ul>
                     {% endif %}
                     {% if section.settings.cart_note_enable %}
-                        <div id="eg-cart-drawer-note">
+                        <div id="eg-cart-drawer-note" class="animate-it">
                             {% unless section.settings.cart_note_title == blank %}
                                 <h4 id="eg-cart-drawer-note-title" class="mb-3">
                                     {{ section.settings.cart_note_title }}
@@ -766,7 +779,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         </div>
                     {% endif %}
                 </div>
-                <div class="offcanvas-footer border-top px-3 py-3">
+                <a href="{{ routes.all_products_collection_url }}" class="button-continue">
+                    <div class="xborder-t xborder-black xtext-center xfont-bold uppercase xm-2 xpy-4">
+                        <span class="xblock">{{ 'general.continue_shopping' | t }}</span>
+                    </div>
+                </a>
+                <div class="offcanvas-footer border-top px-3 py-3 xbg-[#FFF7EA]">
                     <div class="xflex xjustify-around">
                             <p class="text-muted">
                                 {{ 'sections.cart.subtotal' | t }}: 

@@ -93,7 +93,6 @@ class CartItems extends HTMLElement {
           cartFooter.classList.toggle("is-empty", parsedState.item_count === 0);
 
         this.getSectionsToRender().forEach((section) => {
-          console.log("%ccart.js line:80 section", "color: #007acc;", section);
           const elementToReplace =
             document
               .getElementById(section.id)

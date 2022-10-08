@@ -172,7 +172,6 @@ class QuantityInput extends HTMLElement {
 
   onButtonClick(event) {
     event.preventDefault();
-    console.log(this);
     const previousValue = this.input.value;
 
     event.target.name === "plus" ? this.input.stepUp() : this.input.stepDown();

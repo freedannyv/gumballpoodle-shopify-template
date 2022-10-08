@@ -1,0 +1,278 @@
+  /*
+    General styles
+*/
+[type=button]:not(:disabled), 
+[type=reset]:not(:disabled), 
+[type=submit]:not(:disabled), 
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.small {
+    font-size: .875em;
+}
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 
+    Bootstrap Offcanvas 
+    https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.css
+*/
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1045;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    visibility: hidden;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .offcanvas {
+      transition: none;
+    }
+}
+
+.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.offcanvas-backdrop.fade {
+    transition: opacity .15s linear;
+    opacity: 0;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0.5;
+}
+
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    text-transform: uppercase;
+}
+
+.offcanvas-header .btn-close {
+    padding: 0.5rem 0.5rem;
+    margin-top: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.offcanvas-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.offcanvas-body {
+    flex-grow: 1;
+    padding: 1rem 1rem;
+    overflow-y: auto;
+}
+
+.offcanvas-start {
+    top: 0;
+    left: 0;
+    width: 400px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+}
+
+.offcanvas-end {
+    top: 0;
+    right: 0;
+    width: 400px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+}
+
+.offcanvas-top {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 30vh;
+    max-height: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateY(-100%);
+}
+
+.offcanvas-bottom {
+    right: 0;
+    left: 0;
+    height: 30vh;
+    max-height: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);
+}
+
+.offcanvas.show {
+    transform: none;
+}
+
+/*
+    Btn close
+    https://github.com/twbs/bootstrap/blob/main/dist/css/bootstrap.css
+*/
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    color: #000;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: 0.5;
+}
+.btn-close:hover {
+    color: #000;
+    text-decoration: none;
+    opacity: 0.75;
+}
+.btn-close:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    opacity: 1;
+}
+.btn-close:disabled, .btn-close.disabled {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    opacity: 0.25;
+}
+
+.btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+.progress {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+  
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #0d6efd;
+    transition: width 0.6s ease;
+}
+
+.progress-bar-goal-desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .progress-bar { transition: none; }
+}
+  
+@media (prefers-reduced-motion: reduce) {
+    .progress-bar-animated {
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+/*
+    Overrides Bootstrap styles
+*/
+.offcanvas {
+    border: none;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+}
+
+.offcanvas-backdrop {
+    display: block !important; /* Fix for Dawn theme that hides empty divs */
+}
+
+/*
+    Cart Upsells
+*/
+#eg-cart-drawer-upsells-title {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: .5rem;
+}
+
+ul#eg-cart-drawer-upsells-list {
+    list-style-type: none;
+    overflow: auto;
+    display: flex;
+    padding: 0 .5rem 1.5rem;
+    margin: 0 -1rem .5rem;
+}
+
+ul#eg-cart-drawer-upsells-list > li {
+    width: 120px;
+    padding: 0 .5rem;
+    flex-shrink: 0;
+}
+
+ul#eg-cart-drawer-upsells-list select {
+    width: 100%;
+    display: block;
+}
+
+ul#eg-cart-drawer-upsells-list button {
+    min-width: auto;
+    width: 100%;
+    min-height: auto;
+    padding: 0.5rem;
+}
+
+ul#eg-cart-drawer-upsells-list button .path {
+    stroke: white;
+
+}
+
+.button-continue div span {
+    transition: transform 0.3s;
+}
+
+.button-continue:hover div span {
+    transform: translateX(-15px);
+}
+
+/*
+    Cart Note
+*/
+#eg-cart-drawer-note-title {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: .5rem;
+}
